@@ -5,7 +5,7 @@
             {
                 "id": 1,
                 "question": "Which is not a JS Framework?",
-                "options":[
+                "options": [
                     {
                         "id": "1",
                         "value": "VUE"
@@ -29,110 +29,109 @@
             },
             {
                 "id": 2,
-                "question" :"Choose the correct HTML element for the largest heading?",
-                "options" :[
+                "question": "Choose the correct HTML element for the largest heading?",
+                "options": [
                     {
                         "id": "1",
                         "value": "<head>"
                     },
-        
                     {
-                        "id" :"2",
-                        "value" :"<heading>"
+                        "id": "2",
+                        "value": "<heading>"
                     },
                     {
-                        "id" :"3",
-                        "value" :"<h1>"
+                        "id": "3",
+                        "value": "<h1>"
                     },
                     {
-                        "id" :"4",
-                        "value" :"<h6>"
+                        "id": "4",
+                        "value": "<h6>"
                     }
                 ],
-                "answer" :3,
+                "answer": 3,
                 "timer": 15,
-                "point":15
+                "point": 15
             },
             {
-                "id" :3,
-                "question" :" Which character is used to indicate an end tag?",
-                "options":[
+                "id": 3,
+                "question": " Which character is used to indicate an end tag?",
+                "options": [
                     {
                         "id": "1",
                         "value": " *"
                     },
                     {
-                        "id" :"2",
-                        "value" :"/"
+                        "id": "2",
+                        "value": "/"
                     },
                     {
-                        "id" :"3",
-                        "value" : "~"
+                        "id": "3",
+                        "value": "~"
                     },
                     {
-                        "id" :"4",
-                        "value" :"<"
-                    }         
+                        "id": "4",
+                        "value": "<"
+                    }
                 ],
-                "answer" :2,
+                "answer": 2,
                 "timer": 20,
                 "point": 25
             },
             {
                 "id": 4,
-                "question" :"Who is making the Web standards?",
-                "options":[
+                "question": "Who is making the Web standards?",
+                "options": [
                     {
-                    "id" :"1",
-                    "value" :" Microsoft"
+                        "id": "1",
+                        "value": " Microsoft"
                     },
                     {
-                        "id" :"2",
-                        "value" :"Mozilla"
+                        "id": "2",
+                        "value": "Mozilla"
                     },
                     {
-                        "id" :"3",
-                        "value" :"The World Wide Web Consortium"
+                        "id": "3",
+                        "value": "The World Wide Web Consortium"
                     },
                     {
-                        "id" :"4",
-                        "value" :"Google"
+                        "id": "4",
+                        "value": "Google"
                     }
                 ],
-                "answer" :3,
-                "timer" :20,
+                "answer": 3,
+                "timer": 20,
                 "point": 25
             },
             {
-                "id" :5,
-                "question" :"How can you make a bulleted list?",
-                "options" :[
+                "id": 5,
+                "question": "How can you make a bulleted list?",
+                "options": [
                     {
                         "id": "1",
                         "value": " <list>"
                     },
                     {
-                        "id" :"2",
-                        "value":  "<ul>"
+                        "id": "2",
+                        "value": "<ul>"
                     },
                     {
-                        "id" :"3",
-                        "value" :"<ol>"
+                        "id": "3",
+                        "value": "<ol>"
                     }
                 ],
                 "answer": 2,
-                "timer":10,
+                "timer": 10,
                 "point": 25
             }
         ]
-        },
+    },
     {
-            "code": "Q1002",
-            "quiz": [
-            {           
-                    "id": 1,
-                    "question": "Inside which HTML element do we put the JavaScript?",
-                    "options":[
+        "code": "Q1002",
+        "quiz": [
+            {
+                "id": 1,
+                "question": "Inside which HTML element do we put the JavaScript?",
+                "options": [
                     {
                         "id": "1",
                         "value": "<script>"
@@ -154,10 +153,10 @@
                 "timer": 30,
                 "point": 10
             },
-            {         
+            {
                 "id": 2,
                 "question": "How do you create a function in JavaScript?",
-                "options":[
+                "options": [
                     {
                         "id": "1",
                         "value": "function myFunction()"
@@ -175,10 +174,10 @@
                 "timer": 30,
                 "point": 10
             },
-            {         
+            {
                 "id": 3,
                 "question": "How can you add a comment in a JavaScript?",
-                "options":[
+                "options": [
                     {
                         "id": "1",
                         "value": "<!--This is a comment-->"
@@ -196,134 +195,128 @@
                 "timer": 30,
                 "point": 10
             },
-                {         
-                    "id": 4,
-                    "question": "How do you find the number with the highest value of x and y?",
-                    "options":[
-                        {
-                            "id": "1",
-                            "value": "top(x, y)"
-                        },
-                        {
-                            "id": "2",
-                            "value": "ceil(x, y)"
-                        },
-                        {
-                            "id": "3",
-                            "value": "Math.max(x, y)"
-                        },
-                        {
-                            "id": "4",
-                            "value": "Math.ceil(x, y)"
-                        }
-                    ],
-                    "answer": 3,
-                    "timer": 30,
-                    "point": 10
-                },
-                {         
-                        "id": 5,
-                        "question": "How do you declare a JavaScript variable?",
-                        "options":[
-                            {
-                                "id": "1",
-                                "value": "v carName;"
-                            },
-                            {
-                                "id": "2",
-                                "value": "var carName;"
-                            },
-                            {
-                                "id": "3",
-                                "value": "variable carName;"
-                            }
-                        ],
-                        "answer": 2,
-                        "timer": 30,
-                        "point": 10
-                    }                                                            
-                    ]
-                },
             {
-                "code": "Q1003",
-                "quiz": [
+                "id": 4,
+                "question": "How do you find the number with the highest value of x and y?",
+                "options": [
                     {
-                        "id": 1,
-                        "question": "Which of the following class can be used to create a responsive table?",
-                        "options":[
-                            {
-                                "id": "1",
-                                "value": ".table-responsive"
-                            },
-                            {
-                                "id": "2",
-                                "value": ".responsive"
-                            },
-                            {
-                                "id": "3",
-                                "value": ".active"
-                            },
-                            {
-                                "id": "4",
-                                "value": ".table"
-                            }
-                        ],
-                        "answer": 1,
-                        "timer": 25,
-                        "point": 25
+                        "id": "1",
+                        "value": "top(x, y)"
                     },
-
                     {
-                                "id": 2,
-                                "question":"Which of the following bootstrap style of button creates a default?",
-                                "options":[
-                                    {
-                                        "id": "1",
-                                        "value": ".btn"
-                                    },
-                                    {
-                                        "id": "2",
-                                        "value": " .btn-primary"
-                                    },
-                                    {
-                                        "id": "3",
-                                        "value": ".btn-success"
-                                    },
-                                    {
-                                        "id": "4",
-                                        "value": ".btn-info"
-                                    }
-                                ],
-                                "answer": 1,
-                                "timer": 30,
-                                "point": 30
-                            },
-
+                        "id": "2",
+                        "value": "ceil(x, y)"
+                    },
+                    {
+                        "id": "3",
+                        "value": "Math.max(x, y)"
+                    },
+                    {
+                        "id": "4",
+                        "value": "Math.ceil(x, y)"
+                    }
+                ],
+                "answer": 3,
+                "timer": 30,
+                "point": 10
+            },
+            {
+                "id": 5,
+                "question": "How do you declare a JavaScript variable?",
+                "options": [
+                    {
+                        "id": "1",
+                        "value": "v carName;"
+                    },
+                    {
+                        "id": "2",
+                        "value": "var carName;"
+                    },
+                    {
+                        "id": "3",
+                        "value": "variable carName;"
+                    }
+                ],
+                "answer": 2,
+                "timer": 30,
+                "point": 10
+            }
+        ]
+    },
+    {
+        "code": "Q1003",
+        "quiz": [
+            {
+                "id": 1,
+                "question": "Which of the following class can be used to create a responsive table?",
+                "options": [
+                    {
+                        "id": "1",
+                        "value": ".table-responsive"
+                    },
+                    {
+                        "id": "2",
+                        "value": ".responsive"
+                    },
+                    {
+                        "id": "3",
+                        "value": ".active"
+                    },
+                    {
+                        "id": "4",
+                        "value": ".table"
+                    }
+                ],
+                "answer": 1,
+                "timer": 25,
+                "point": 25
+            },
+            {
+                "id": 2,
+                "question": "Which of the following bootstrap style of button creates a default?",
+                "options": [
+                    {
+                        "id": "1",
+                        "value": ".btn"
+                    },
+                    {
+                        "id": "2",
+                        "value": " .btn-primary"
+                    },
+                    {
+                        "id": "3",
+                        "value": ".btn-success"
+                    },
+                    {
+                        "id": "4",
+                        "value": ".btn-info"
+                    }
+                ],
+                "answer": 1,
+                "timer": 30,
+                "point": 30
+            },
             {
                 "id": 3,
                 "question": " Which of the following bootstrap style is used to add button to .navbar?",
-                "options":[
-                            {
-                                "id": "1",
-                                "value": ".navbar-.btn"
-                            },
-                            {
-                                "id": "2",
-                                "value": ".btn"
-                            },
-                            {
-                                "id": "3",
-                                "value": ".form-btn"
-                            }]
-                            ,
-                            
-                        
-                                "answer": 1,
-                                "timer": 20,
-                                "point": 45
-                            }  
-                        ]
+                "options": [
+                    {
+                        "id": "1",
+                        "value": ".navbar-.btn"
+                    },
+                    {
+                        "id": "2",
+                        "value": ".btn"
+                    },
+                    {
+                        "id": "3",
+                        "value": ".form-btn"
                     }
-                                                        
-            ]
-
+                ],
+                "answer": 1,
+                "timer": 20,
+                "point": 45
+            }
+        ]
+    }
+]

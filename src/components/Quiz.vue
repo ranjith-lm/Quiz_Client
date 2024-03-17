@@ -102,10 +102,16 @@ export default {
                 this.timer = this.game.timer;
                 this.countdown();
             }else{
+                let obj = { 
+                    correctAnswer: this.correct ? this.correct : 0,
+                    inCorrectAnswer: this.inCorrect ? this.inCorrect : 0,
+                    notAnswered: this.notanswer ? this.notanswer : 0
+                }
                 this.result.push(this.correct);
                 this.result.push(this.inCorrect);
                 this.result.push(this.notanswer);   
                 console.log(this.result);
+                console.log('obj -->'+JSON.stringify(obj));
                 this.isComplete = true;
                 this.drawChart();
                }
