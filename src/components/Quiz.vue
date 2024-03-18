@@ -44,7 +44,7 @@ import Loader from './Loader';
 import Chart from 'chart.js';
 
 export default {
-  props: ['quizData'],
+  props: ['quizData','userName'],
   components:{
     Loader
   },
@@ -103,6 +103,7 @@ export default {
                 this.countdown();
             }else{
                 let obj = { 
+                    name: this.userName || '',
                     correctAnswer: this.correct ? this.correct : 0,
                     inCorrectAnswer: this.inCorrect ? this.inCorrect : 0,
                     notAnswered: this.notanswer ? this.notanswer : 0
@@ -112,12 +113,22 @@ export default {
                 this.result.push(this.notanswer);   
                 console.log(this.result);
                 console.log('obj -->'+JSON.stringify(obj));
+                this.callbackend(obj)
                 this.isComplete = true;
                 this.drawChart();
                }
 
 
         },1000);
+    },
+    async callbackend(bodyObj) {
+        let res = await axios({
+            url: 'http://localhost:9000/api/data',
+            method: "post",
+            data: bodyObj,
+        });
+        console.log("res",res)
+    // return res.data;
     },
     countdown: function(){
         this.counter = setInterval(()=>{
@@ -175,7 +186,7 @@ export default {
   },
 
   created(){
-
+        console.log("erererere",this.userName)
         if(this.quizData == undefined){
             this.$router.push({name: 'Home'});
         }else{

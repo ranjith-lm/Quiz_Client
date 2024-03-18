@@ -40,7 +40,8 @@
             for (let data of response.data) {
               if (data.code == this.code) {
                 this.quiz = data.quiz;
-                this.$router.push({ name: 'Quiz', params: { quizData: this.quiz } });
+                console.log("this.quiz",this.quiz)
+                this.$router.push({ name: 'Quiz', params: { quizData: this.quiz,userName: this.name } });
                 break;
               }
             }
