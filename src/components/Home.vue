@@ -53,7 +53,7 @@ export default {
             if (data.code == this.code) {
               this.quiz = data.quiz;
               console.log("this.quiz", this.quiz)
-              this.$router.push({ name: 'Quiz', params: { quizData: this.quiz, userName: this.name } });
+              this.$router.push({ name: 'Quiz', params: { quizData: this.quiz, userName: this.name, email: this.email } });
               break;
             }
           }
