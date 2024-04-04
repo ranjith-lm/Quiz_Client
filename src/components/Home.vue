@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="toolbar">
-      <div class="spacer"></div>
+<div class="spacer"></div>
       <button class="toolbar-button">About</button>
       <button class="toolbar-button">Info</button>
     </div>
@@ -80,6 +80,12 @@ export default {
 </script>
 
 <style scoped>
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+  font-family: "poppins", sans-serif;
+  font-weight: 600;
+}
+
 .toolbar {
   display: flex;
   justify-content: flex-end;
@@ -90,29 +96,33 @@ export default {
 
 .spacer {
   flex-grow: 1;
+  
   /* Take up all available space to push buttons to the right */
 }
 
 .toolbar-button {
+  font-size: 120%;
   margin-left: 10px;
   padding: 8px 16px;
-  background-color: #007bff;
-  color: white;
+  background-color: #ffffff;
+  color:rgb(0, 0, 0);
+  border-color: rgb(255, 255, 255);
   border: none;
   border-radius: 4px;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  transition:0.3s ease;
 }
 
 .toolbar-button:hover {
-  background-color: #0056b3;
+  background-color:black;
+  color: #ffffff;
 }
 
 .quiz-container {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  height: 90vh;
   background-image: url('https://github.com/ranjith-lm/Quiz_Bg/raw/main/jk.jpg');
   background-size: cover;
 }

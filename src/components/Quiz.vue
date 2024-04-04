@@ -209,7 +209,12 @@ export default {
 </script>
 
 <style scoped>
-
+ @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+  *{
+   font-family: "poppins", sans-serif;
+   font-weight: 600;
+  }
+    
     .progress{
         transition: all 1s cubic-bezier(1, 1, 1, 1);
         height: 5px;
@@ -221,7 +226,7 @@ export default {
         right: 0;
         border-radius: 0;
     }
-    .correct{
+.correct{
         background: green;
         color: #fff;
     }
@@ -234,10 +239,12 @@ export default {
     .custom-container{
         display: flex;
         justify-content: center;
+        
     }
+
     .box{
-        width: 90%;
-        margin-top: 100px;
+        width:90%;
+        margin-top: 170px;
         min-height: 200px;
         border-radius: 3px;
         border: 1px solid #ccc;
@@ -286,6 +293,16 @@ export default {
         padding: 0px 10px;
         cursor: pointer;
         word-wrap: break-word;
+    }
+  
+    .correct{
+        background: green;
+        color: #fff;
+    }
+
+    .incorrect{
+        background: red;
+        color: #fff;
     }
 
     .question{
