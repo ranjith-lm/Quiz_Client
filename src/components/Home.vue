@@ -1,9 +1,9 @@
 <template>
   <div>
     <div class="toolbar">
-<div class="spacer"></div>
-      <button class="toolbar-button">About</button>
-      <button class="toolbar-button">Info</button>
+      <div class="spacer"></div>
+      <button class="toolbar-button" @click="aboutQuiz">About</button>
+      <!-- <button class="toolbar-button">Info</button> -->
     </div>
     <div class="quiz-container">
 
@@ -16,8 +16,11 @@
           <input type="email" v-model="email" class="form-control" placeholder="Enter Your Email">
         </div>
         <div class="input-group">
-          <input type="text" v-model="code" class="form-control" placeholder="Enter Code (Q1001)">
+          <input type="text" v-model="rollno" class="form-control" placeholder="Enter Your Roll Number">
         </div>
+        <!-- <div class="input-group">
+          <input type="text" v-model="code" class="form-control" placeholder="Enter Code (Q1001)">
+        </div> -->
         <div class="error-message" v-if="isIncorrectCode">Incorrect Code</div>
         <button @click="validateCode" class="btn btn-primary" :disabled="disable">SUBMIT</button>
       </div>
@@ -36,8 +39,9 @@ export default {
   data() {
     return {
       name: '',
-      code: '',
+      code: 'Q1001',
       email: '',
+      rollno: '',
       isIncorrectCode: false,
       showLoader: false,
       quiz: '',
@@ -53,7 +57,7 @@ export default {
             if (data.code == this.code) {
               this.quiz = data.quiz;
               console.log("this.quiz", this.quiz)
-              this.$router.push({ name: 'Quiz', params: { quizData: this.quiz, userName: this.name, email: this.email } });
+              this.$router.push({ name: 'Quiz', params: { quizData: this.quiz, userName: this.name, email: this.email, rollno: this.rollno } });
               break;
             }
           }
@@ -70,6 +74,10 @@ export default {
           this.showLoader = false;
         });
     },
+
+    aboutQuiz: function () {
+      this.$router.push({ name: 'About' });
+    }
   },
   computed: {
     disable: function () {
@@ -81,7 +89,8 @@ export default {
 
 <style scoped>
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-*{
+
+* {
   font-family: "poppins", sans-serif;
   font-weight: 600;
 }
@@ -96,7 +105,7 @@ export default {
 
 .spacer {
   flex-grow: 1;
-  
+
   /* Take up all available space to push buttons to the right */
 }
 
@@ -105,16 +114,16 @@ export default {
   margin-left: 10px;
   padding: 8px 16px;
   background-color: #ffffff;
-  color:rgb(0, 0, 0);
+  color: rgb(0, 0, 0);
   border-color: rgb(255, 255, 255);
   border: none;
   border-radius: 4px;
   cursor: pointer;
-  transition:0.3s ease;
+  transition: 0.3s ease;
 }
 
 .toolbar-button:hover {
-  background-color:black;
+  background-color: black;
   color: #ffffff;
 }
 

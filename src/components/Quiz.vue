@@ -44,7 +44,7 @@ import Loader from './Loader';
 import Chart from 'chart.js';
 
 export default {
-  props: ['quizData','userName','email'],
+  props: ['quizData','userName','email','rollno'],
   components:{
     Loader
   },
@@ -104,6 +104,7 @@ export default {
                 let obj = { 
                     name: this.userName || '',
                     email: this.email || 'thiyaneshoff@gmail.com',
+                    rollno: this.rollno || '',
                     correctAnswer: this.correct ? this.correct : 0,
                     inCorrectAnswer: this.inCorrect ? this.inCorrect : 0,
                     notAnswered: this.notanswer ? this.notanswer : 0
