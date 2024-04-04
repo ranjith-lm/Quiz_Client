@@ -49,30 +49,35 @@ export default {
   },
   methods: {
     validateCode: function () {
-      this.showLoader = true;
-      axios
-        .get('./static/json/questions.json')
-        .then((response) => {
-          for (let data of response.data) {
-            if (data.code == this.code) {
-              this.quiz = data.quiz;
-              console.log("this.quiz", this.quiz)
-              this.$router.push({ name: 'Quiz', params: { quizData: this.quiz, userName: this.name, email: this.email, rollno: this.rollno } });
-              break;
+      if (this.name == 'admin') {
+        this.$router.push({ name: 'Overview' });
+      } else {
+        this.showLoader = true;
+        axios
+          .get('./static/json/questions.json')
+          .then((response) => {
+            for (let data of response.data) {
+              if (data.code == this.code) {
+                this.quiz = data.quiz;
+                console.log("this.quiz", this.quiz)
+                this.$router.push({ name: 'Quiz', params: { quizData: this.quiz, userName: this.name, email: this.email, rollno: this.rollno } });
+                break;
+              }
             }
-          }
 
-          if (this.quiz == '') {
-            this.isIncorrectCode = true;
-          }
+            if (this.quiz == '') {
+              this.isIncorrectCode = true;
+            }
 
-          this.showLoader = false;
-          console.log(this.quiz);
-        })
-        .catch((error) => {
-          console.log(error);
-          this.showLoader = false;
-        });
+            this.showLoader = false;
+            console.log(this.quiz);
+          })
+          .catch((error) => {
+            console.log(error);
+            this.showLoader = false;
+          });
+      }
+
     },
 
     aboutQuiz: function () {
